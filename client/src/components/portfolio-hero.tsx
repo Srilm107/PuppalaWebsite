@@ -3,11 +3,28 @@ import { Download, Mail, Phone, Linkedin, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import type { Profile } from "@shared/schema";
+import resumePdf from "@assets/Lakshmi Durga Puppala_1754483733252.pdf";
 
 export default function PortfolioHero() {
   const { data: profile, isLoading } = useQuery<Profile>({
     queryKey: ["/api/profile"],
   });
+
+  const scrollToContact = () => {
+    const element = document.getElementById("contact");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = resumePdf;
+    link.download = 'Lakshmi_Durga_Puppala_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   if (isLoading) {
     return (
@@ -55,11 +72,14 @@ export default function PortfolioHero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button 
+                onClick={downloadResume}
+                className="bg-primary text-primary-foreground hover:bg-primary/90"
+              >
                 <Download className="h-4 w-4 mr-2" />
                 Download Resume
               </Button>
-              <Button variant="outline">
+              <Button variant="outline" onClick={scrollToContact}>
                 <Mail className="h-4 w-4 mr-2" />
                 Contact Me
               </Button>
