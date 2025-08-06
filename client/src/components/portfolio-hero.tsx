@@ -3,7 +3,7 @@ import { Download, Mail, Phone, Linkedin, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import type { Profile } from "@shared/schema";
-import resumePdf from "@assets/Lakshmi Durga Puppala_1754483733252.pdf";
+import resumePdf from "@assets/PUPPALA LAKSHMI DURGA_1754484042674.pdf";
 
 export default function PortfolioHero() {
   const { data: profile, isLoading } = useQuery<Profile>({
