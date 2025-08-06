@@ -115,9 +115,7 @@ export default function PortfolioFooter() {
         
         <div className="border-t border-slate-800 mt-8 pt-8 text-center">
           <p className="text-slate-400 text-sm flex items-center justify-center">
-            © 2025 {profile?.name || "Lakshmi Durga Puppala"}. Made with 
-            <Heart className="h-4 w-4 mx-1 text-red-500" /> 
-            and modern web technologies.
+            © 2025 {profile?.name || "Lakshmi Durga Puppala"}.
           </p>
         </div>
       </div>
