@@ -2,9 +2,9 @@
 
 ## Overview
 
-This is a portfolio website project built as part of the Information Technology Field Experience (EX30) course at Cumberland University. The application is a full-stack web development project that showcases milestone tracking and project management functionality for a student's portfolio website development journey.
+This is a professional portfolio website showcasing Lakshmi Durga Puppala's professional background, skills, experience, and projects. The application is a full-stack web development project that presents a comprehensive view of her technical expertise and professional journey.
 
-The project demonstrates a complete web development lifecycle, featuring a React frontend with TypeScript, an Express.js backend, and PostgreSQL database integration. It includes milestone tracking, project information management, and a responsive user interface for displaying development progress.
+The project demonstrates modern web development practices, featuring a React frontend with TypeScript, an Express.js backend, and in-memory data storage. It includes sections for professional profile, skills showcase, work experience, project portfolio, education, and contact information with a responsive, modern design.
 
 ## User Preferences
 
